@@ -1,0 +1,37 @@
+.call-to-action-block {
+  &__intro {
+    font-size: 16px;
+    padding: 3rem 0rem;
+    max-width: 460px;
+    margin: auto;
+  }
+
+  &__title {
+    font-size: 50px;
+    line-height: 65px;
+    font-family: $font-family-primary;
+
+    @media (max-width: 767px) {
+      font-size: 36px;
+    }
+  }
+
+  &__box-number {
+    color: $color-primary;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  &__box-title {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  &__box-content {
+    font-size: 17px;
+    font-weight: 400;
+  }
+}

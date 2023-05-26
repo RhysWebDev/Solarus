@@ -1,0 +1,56 @@
+{
+  "key": "block_row_with_columns",
+  "title": "Row with Columns",
+  "fields": [
+    {
+      "key": "field_row_with_columns_main_title",
+      "label": "Main Title",
+      "name": "main_title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_row_with_columns_columns",
+      "label": "Columns",
+      "name": "columns",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Add Column",
+      "collapsed": "",
+      "sub_fields": [
+        {
+          "key": "field_row_with_columns_column_icon",
+          "label": "Icon",
+          "name": "icon",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "field_row_with_columns_column_subtitle",
+          "label": "Subtitle",
+          "name": "subtitle",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "field_row_with_columns_column_content",
+          "label": "Content",
+          "name": "content",
+          "type": "textarea",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/block-row-with-columns"
+      }
+    ]
+  ],
+  "style": "seamless",
+  "description": ""
+}

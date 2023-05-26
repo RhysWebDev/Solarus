@@ -1,0 +1,22 @@
+.hero {
+  &__title {
+    font-size: 150px;
+    line-height: 136px;
+    margin-bottom: 3rem;
+
+    @media (max-width: 1024px) {
+      font-size: 75px;
+      line-height: 70px;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 45px;
+      line-height: 40px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 34ch;
+    font-weight: 400;
+  }
+}

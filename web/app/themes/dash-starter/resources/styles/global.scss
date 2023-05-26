@@ -1,0 +1,498 @@
+$font-family-primary: 'Outfit', sans-serif;
+$font-family-secondary: 'DM Sans', sans-serif;
+$fancy-font: 'bimbo-pro', sans-serif;
+$main-font: 'Outfit', sans-serif;
+
+$header_large: clamp(3.75rem, calc(3.3929rem + 1.9048vw), 6.25rem);
+$header_medium: clamp(3rem, calc(2.8929rem + 0.5714vw), 3.75rem);
+$header_small: clamp(1.875rem, calc(1.7857rem + 0.4762vw), 2.5rem);
+$subtitle: clamp(1.375rem, calc(1.3036rem + 0.381vw), 1.875rem);
+$smallTitle: 20px;
+
+$color-primary: #e6a806;
+$color-secondary: #244387;
+$color-accent: #fbe9c7;
+$teams-color: #525abf;
+$gradient: linear-gradient(
+  180deg,
+  rgba(22, 45, 96, 1) 0%,
+  rgba(43, 78, 155, 1) 100%
+);
+$clr-white: #fff;
+$clr-black: #000;
+$pastelGreen: #e0f5e7;
+$lightaccent: #f8faff;
+
+$spacing-xxs: 0.25rem;
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$icon-size: 50px;
+
+// Mixins
+
+@mixin font-family($family) {
+  font-family: $family;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin text-color($color) {
+  color: $color;
+}
+
+@mixin background-color($color) {
+  background-color: $color;
+}
+
+@mixin padding($size) {
+  padding: $size;
+}
+
+@mixin margin($size) {
+  margin: $size;
+}
+
+// Typograhy
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-primary;
+}
+
+h1 {
+  @include font-size($header_large);
+  @include font-family($main-font);
+  font-weight: 300;
+  line-height: 80px;
+}
+
+h2 {
+  @include font-size($header_medium);
+  @include font-family($main-font);
+  font-weight: 300;
+  line-height: 55px;
+  font-weight: 400;
+}
+
+h3 {
+  @include font-size($header_small);
+  @include font-family($main-font);
+  font-weight: 400;
+}
+
+h6 {
+  @include font-size($smallTitle);
+  font-weight: 500;
+}
+
+p {
+  line-height: 30px;
+}
+
+.large_font {
+  @include font-size($header_large);
+}
+
+.heading-primary {
+  @include font-family($font-family-primary);
+  @include font-size(2rem);
+  @include text-color($color-primary);
+  @include margin($spacing-lg);
+}
+
+.subtitle {
+  @include font-family($font-family-secondary);
+  @include font-size($subtitle);
+}
+
+.paragraph {
+  @include font-family($main-font);
+  @include font-size(1rem);
+  @include text-color($color-secondary);
+  @include margin($spacing-sm);
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.text-accent {
+  color: $color-secondary;
+}
+
+.text-black {
+  color: $clr-black;
+}
+
+.color_secondary {
+  color: $color-secondary;
+}
+
+// Global classes:
+
+.fancy_font {
+  color: $color-primary;
+}
+
+.bg-primary {
+  background: $color-primary;
+}
+
+.bg-gradient {
+  background: $gradient;
+}
+
+.bg-accent {
+  background: $color-accent;
+}
+
+.bg-lightaccent {
+  background: $lightaccent;
+}
+
+.bg-pastel {
+  background: $pastelGreen;
+}
+
+.bg-white {
+  background: $clr-white;
+}
+
+.border-primary {
+  border-color: $color-secondary;
+}
+
+.btn {
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.6rem 1.8rem;
+  transition: background-color 0.2s ease-in-out;
+
+  &--primary {
+    background: $color-primary;
+    color: $clr-black;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+
+    &:hover {
+      background-color: lighten($color-primary, 10%);
+      cursor: pointer;
+    }
+
+    // Icon styles
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      margin-left: 0.5rem;
+      background-image: url('http://solarus.test/app/uploads/2023/05/Icon-feather-arrow-right-circle.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      top: 5px;
+      right: -5px;
+    }
+  }
+
+  &--secondary {
+    background: $color-secondary;
+    color: $clr-white;
+
+    &:hover {
+      background-color: lighten($color-secondary, 10%);
+      cursor: pointer;
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    color: $color-primary;
+    border-radius: 30px;
+    border: 2px solid $color-primary;
+    &:hover {
+      background-color: $color-primary;
+      cursor: pointer;
+      color: $clr-white;
+    }
+  }
+
+  &--teams {
+    color: $clr-white;
+    background: $teams-color;
+  }
+
+  &--lesspadding {
+    @media (max-width: 1660px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+// Menu
+.nav {
+  li {
+    color: $clr-black;
+  }
+}
+
+.header {
+  color: $clr-white;
+  &__topbar {
+    background: $color-primary;
+  }
+}
+
+// Faq's
+
+.faq__input:checked ~ .faq__label .faq__answer {
+  @apply h-auto;
+}
+
+.faq__input:checked ~ .faq__label .faq__answer-text {
+  @apply opacity-100 translate-y-0;
+}
+
+.faq__input {
+  @apply absolute opacity-0;
+}
+
+.faq__answer {
+  @apply h-0 overflow-hidden;
+  transition: height 0.3s ease;
+}
+
+.faq__answer-text {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+// Icons
+
+.contact-info {
+  i {
+    margin-right: 1rem;
+    background: #fff;
+    border-radius: 100%;
+    padding: 0.2rem;
+    width: auto;
+    text-align: center;
+    color: $color-primary;
+  }
+}
+
+.social-icon {
+  background: #fff;
+  border-radius: 100%;
+  padding: 0.2rem;
+  width: 30px;
+  max-height: 30px;
+  text-align: center;
+}
+
+// Custom list
+
+.icon_list {
+  &--chatbubble {
+    &::before {
+      background-image: url('http://dash-starter.test/app/uploads/2023/05/Group-2383.png');
+      background-size: contain;
+      /* add other icon styles */
+    }
+  }
+
+  &--document {
+    &::before {
+      background-image: url('http://dash-starter.test/app/uploads/2023/05/Group-2384.png');
+      background-size: cover;
+      /* add other icon styles */
+    }
+  }
+
+  &--case {
+    &::before {
+      background-image: url('http://dash-starter.test/app/uploads/2023/05/Group-2385-1.png');
+      background-size: contain;
+      /* add other icon styles */
+    }
+  }
+
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    padding-left: $icon-size + 10px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      display: inline-block;
+      width: $icon-size;
+      height: $icon-size;
+    }
+  }
+}
+
+// Responsive
+
+.mobile_flex_col {
+  @media (max-width: 1024px) {
+    flex-direction: column !important;
+  }
+}
+
+.faqs {
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+
+.gradient_padding {
+  @media (max-width: 1024px) {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+}
+
+.button_wrapper {
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.half-columns-grid__grid-wrap {
+  @media (max-width: 1024px) {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.service_carousel__slider {
+  @media (max-width: 1024px) {
+    max-width: 100% !important;
+  }
+}
+
+.assessments__carousel {
+  @media (max-width: 1024px) {
+    margin: 1rem;
+  }
+}
+
+.hide_on_mobile {
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.fluentform {
+  width: 100%;
+
+  input {
+    border-radius: 50px;
+    height: 70px;
+  }
+
+  .ff-btn {
+    margin-top: 2rem;
+    height: 50px;
+  }
+
+  label {
+    display: none !important;
+  }
+}
+
+.ff-el-form-control {
+  border-radius: 50px !important;
+}
+
+.fluentform .ff_btn_style {
+  background: $color-primary !important;
+  border-radius: 30px !important;
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  line-height: 50px !important;
+  height: 70px;
+}
+
+form.fluent_form_2 .wpf_has_custom_css.ff-btn-submit {
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.6rem 1.8rem;
+  transition: background-color 0.2s ease-in-out;
+  background-color: $color-secondary !important;
+  border: 0px;
+  max-width: 2;
+}
+
+.fluentform .ff-el-group {
+  margin-bottom: 0px !important;
+}
+
+// header css
+
+.header {
+  height: 120px;
+
+  &__logo {
+    max-height: 105px;
+  }
+}
+
+.scrolled {
+  top: 0px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+// swiper
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 16%,
+    rgba(22, 45, 96, 1) 16%,
+    rgba(43, 78, 155, 1) 100%
+  );
+}

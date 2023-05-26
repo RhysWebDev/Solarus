@@ -1,0 +1,48 @@
+{
+  "key": "block_logos",
+  "title": "Logos Block",
+  "fields": [
+    {
+      "key": "field_logos_title",
+      "label": "Title",
+      "name": "title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "field_logos",
+      "label": "Logos",
+      "name": "logos",
+      "type": "repeater",
+      "required": true,
+      "sub_fields": [
+        {
+          "key": "field_logo",
+          "label": "Logo",
+          "name": "logo",
+          "type": "image",
+          "required": true,
+          "return_format": "array",
+          "preview_size": "thumbnail"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/logos-block"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": ""
+}
