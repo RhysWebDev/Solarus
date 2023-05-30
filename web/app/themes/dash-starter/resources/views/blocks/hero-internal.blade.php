@@ -33,7 +33,7 @@
     <div class="container mx-auto px-4 py-12 md:py-32 gap-5 relative">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-                <h1 class="font-medium text-white hero__title-smaller mb-2 mt-[2rem] title-lg">
+                <h1 class="font-medium text-white hero__title-smaller mb-2 pt-[3rem] md:mt-[2rem] title-lg">
                     {!! get_field('title') !!}
                 </h1>
                 <div class="pl-0 mt-6 md:mt-0 flex flex-row items-center">
@@ -75,7 +75,7 @@
                 <div class="relative mt-6 md:mt-0">
                     <div
                         class="max-w-[670px] form_wrap drop-shadow-lg w-full p-4 absolute top-[50%] right-0 w-full md:w-[calc(50% + 3rem)] h-full flex flex-col items-center justify-end z-10 pr-3">
-                        <div class="bg-white px-[5rem] py-[3rem]">
+                        <div class="bg-white px-[2rem] md:px-[5rem] py-[3rem]">
                             <h3 class="font-custom-size color_secondary mb-4"> {{ get_field('form_title') }} </h3>
                             <p> {{ get_field('form_content') }} </p>
                             {!! do_shortcode(get_field('form_shortcode')) !!}

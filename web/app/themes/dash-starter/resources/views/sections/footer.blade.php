@@ -12,7 +12,7 @@
                     @endwhile
                 </div>
             @endif
-            <div class="footer__lower-content pt-[5rem] pr-[17rem]">
+            <div class="footer__lower-content pt-[4rem] pt-[5rem] pr-[17rem]">
                 <div class="logo h-[69px] invert-colors content-center align-center text-center mx-auto mb-[5rem]">
                     @php $logo = get_field('footer_logo', 'option') @endphp
                     @if ($logo)
@@ -23,13 +23,14 @@
                     @endif
                 </div>
 
-                <div class="footer__nav pb-[4rem] text-white flex-col md:flex-row ">
+                <div class="footer__nav pb-[2rem] md:pb-[4rem] text-white flex-col md:flex-row ">
                     @php wp_nav_menu() @endphp
                 </div>
 
                 <hr />
 
-                <div class="footer__under-logo text-white flex flex-row flex-start pt-[5rem] pb-[5rem] gap-x-[3rem]">
+                <div
+                    class="footer__under-logo text-white flex flex-row flex-start pt-[2rem] md:pt-[5rem] pb-[2rem] md:pb-[5rem] gap-x-[3rem]">
                     <div class="footer__contact-info">
                         <p><a href="#">Contact Us </a></p>
                         <p>0161 393 1882 </p>
@@ -59,7 +60,7 @@
 
                 <hr />
 
-                <div class="footer__bottom flex flex-row flex-start text-white pt-[5rem] gap-x-[5rem]">
+                <div class="footer__bottom flex flex-row flex-start text-white pt-[2rem] md:pt-[5rem] gap-x-[5rem]">
                     <p>Copyright 2023 </p>
                     <a href="#">Cookies </a>
                     <a href="#"> Privacy policy</a>
