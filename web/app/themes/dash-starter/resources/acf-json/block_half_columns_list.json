@@ -1,0 +1,106 @@
+{
+  "key": "block_half_columns_list",
+  "title": "Half Columns List",
+  "fields": [
+    {
+      "key": "field_column_image",
+      "label": "Column Image",
+      "name": "column_image",
+      "type": "image",
+      "instructions": "Upload an image for the column.",
+      "required": true,
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_service_title",
+      "label": "Service Title",
+      "name": "service_title",
+      "type": "text",
+      "instructions": "Enter the title for the service.",
+      "required": true
+    },
+    {
+      "key": "field_service_content",
+      "label": "Service Content",
+      "name": "service_content",
+      "type": "textarea",
+      "instructions": "Enter the content for the service.",
+      "required": true,
+      "new_lines": "wpautop"
+    },
+    {
+      "key": "field_service_button_link",
+      "label": "Service Button Link",
+      "name": "service_button_link",
+      "type": "link",
+      "instructions": "Enter the button link for the service.",
+      "required": true
+    },
+    {
+      "key": "field_title",
+      "label": "Title",
+      "name": "title",
+      "type": "text",
+      "instructions": "Enter the title for the block.",
+      "required": true
+    },
+    {
+      "key": "field_icon_list",
+      "label": "Icon List",
+      "name": "icon_list",
+      "type": "repeater",
+      "instructions": "Add icons, subtitles, and content for the list.",
+      "required": false,
+      "collapsed": "",
+      "layout": "row",
+      "button_label": "Add Row",
+      "sub_fields": [
+        {
+          "key": "field_icon",
+          "label": "Icon",
+          "name": "icon",
+          "type": "image",
+          "instructions": "Upload an icon for the list item.",
+          "required": true,
+          "return_format": "url",
+          "preview_size": "thumbnail"
+        },
+        {
+          "key": "field_subtitle",
+          "label": "Subtitle",
+          "name": "subtitle",
+          "type": "text",
+          "instructions": "Enter the subtitle for the list item.",
+          "required": true
+        },
+        {
+          "key": "field_content",
+          "label": "Content",
+          "name": "content",
+          "type": "textarea",
+          "instructions": "Enter the content for the list item.",
+          "required": true,
+          "new_lines": "wpautop"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/block_half_columns_list"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": ""
+}

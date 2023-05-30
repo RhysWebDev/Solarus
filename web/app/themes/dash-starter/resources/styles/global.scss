@@ -20,8 +20,9 @@ $gradient: linear-gradient(
 );
 $clr-white: #fff;
 $clr-black: #000;
-$pastelGreen: #e0f5e7;
+$pastelYellow: #fef1d9;
 $lightaccent: #f8faff;
+$pastelColour: #7e92ac;
 
 $spacing-xxs: 0.25rem;
 $spacing-xs: 0.5rem;
@@ -125,6 +126,10 @@ p {
   color: $color-primary;
 }
 
+.text-pastel {
+  color: $pastelColour;
+}
+
 .text-accent {
   color: $color-secondary;
 }
@@ -147,8 +152,20 @@ p {
   background: $color-primary;
 }
 
+.bg-secondary {
+  background: $color-secondary;
+}
+
+.bg-transparent-color {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 .bg-gradient {
   background: $gradient;
+}
+
+.bg-pastelYellow {
+  background: $pastelYellow;
 }
 
 .bg-accent {
@@ -159,16 +176,16 @@ p {
   background: $lightaccent;
 }
 
-.bg-pastel {
-  background: $pastelGreen;
-}
-
 .bg-white {
   background: $clr-white;
 }
 
 .border-primary {
   border-color: $color-secondary;
+}
+
+.border-yellow {
+  border-color: #f9bb44;
 }
 
 .btn {
@@ -423,6 +440,15 @@ p {
   label {
     display: none !important;
   }
+
+  .ff-el-form-check-label {
+    display: block !important;
+  }
+}
+
+.fluentform input[type='checkbox'],
+.fluentform input[type='radio'] {
+  height: 20px;
 }
 
 .ff-el-form-control {
@@ -453,6 +479,12 @@ form.fluent_form_2 .wpf_has_custom_css.ff-btn-submit {
   margin-bottom: 0px !important;
 }
 
+.popup_form {
+  .ff-el-input--content {
+    margin-bottom: 20px;
+  }
+}
+
 // header css
 
 .header {
@@ -460,12 +492,17 @@ form.fluent_form_2 .wpf_has_custom_css.ff-btn-submit {
 
   &__logo {
     max-height: 105px;
+
+    @media (max-width: 1024px) {
+      max-height: 85px;
+      min-height: 70px;
+    }
   }
 }
 
 .scrolled {
   top: 0px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 // swiper
@@ -495,4 +532,40 @@ form.fluent_form_2 .wpf_has_custom_css.ff-btn-submit {
     rgba(22, 45, 96, 1) 16%,
     rgba(43, 78, 155, 1) 100%
   );
+
+  @media (max-width: 767px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.footer__bottom {
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.footer-col-end {
+  @media (max-width: 767px) {
+    margin-top: 3rem;
+  }
+}
+
+#menu-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.font-custom-size {
+  font-size: 50px;
+  line-height: 65px;
+  font-family: $font-family-primary;
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+  }
 }

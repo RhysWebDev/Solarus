@@ -1,0 +1,43 @@
+{
+  "key": "group_featured_block",
+  "title": "Featured Block",
+  "fields": [
+    {
+      "key": "field_featured_image",
+      "label": "Image",
+      "name": "featured_image",
+      "type": "image",
+      "instructions": "Select the featured image",
+      "required": true,
+      "return_format": "url"
+    },
+    {
+      "key": "field_featured_title",
+      "label": "Title",
+      "name": "featured_title",
+      "type": "text",
+      "instructions": "Enter the title for the featured block",
+      "required": true
+    },
+    {
+      "key": "field_featured_content",
+      "label": "Content",
+      "name": "featured_content",
+      "type": "textarea",
+      "instructions": "Enter the content for the featured block",
+      "required": true,
+      "rows": 4
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/featured-block"
+      }
+    ]
+  ],
+  "style": "seamless",
+  "description": "This field group is used for the featured block section."
+}

@@ -23,8 +23,8 @@
                     @endif
                 </div>
 
-                <div class="footer__nav pb-[4rem]">
-                    @include('partials.navigation')
+                <div class="footer__nav pb-[4rem] text-white flex-col md:flex-row ">
+                    @php wp_nav_menu() @endphp
                 </div>
 
                 <hr />
@@ -74,3 +74,6 @@
             {!! do_shortcode('[fluentform id="1"]') !!}
         </div>
     </section>
+
+
+    @include('partials.popup')

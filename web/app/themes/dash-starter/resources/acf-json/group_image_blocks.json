@@ -1,11 +1,11 @@
 {
-    "key": "group_645243196f6f4",
-    "title": "Half columns variation 2",
+    "key": "group_image_blocks",
+    "title": "Image Blocks",
     "fields": [
         {
-            "key": "field_64751a5f0c368",
-            "label": "Column 1 Image",
-            "name": "column_1_image",
+            "key": "field_64766a44db9d6",
+            "label": "Background image",
+            "name": "background_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -28,11 +28,11 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_6475b6119f6a1",
-            "label": "Column 1 Title",
+            "key": "field_64766a5ddb9d8",
+            "label": "Column 1 title",
             "name": "column_1_title",
             "aria-label": "",
-            "type": "textarea",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -43,16 +43,61 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": 1,
             "placeholder": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": ""
         },
         {
-            "key": "field_64524319727c4",
-            "label": "Column 2 Title",
+            "key": "field_64766a6fdb9da",
+            "label": "Column 1 text",
+            "name": "column_1_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64766a52db9d7",
+            "label": "Background image 2",
+            "name": "background_image_2",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_64766a65db9d9",
+            "label": "Column 2 title",
             "name": "column_2_title",
             "aria-label": "",
-            "type": "textarea",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -63,16 +108,16 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": 1,
             "placeholder": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": ""
         },
         {
-            "key": "field_64524319727cc",
-            "label": "Column 2 Content",
-            "name": "column_2_content",
+            "key": "field_64766a82db9db",
+            "label": "Column 2 text",
+            "name": "column_2_text",
             "aria-label": "",
-            "type": "wysiwyg",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -82,26 +127,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_64751c10054d5",
-            "label": "Button link",
-            "name": "button_link",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -109,7 +138,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/half-columns-content"
+                "value": "acf\/image-blocks"
             }
         ]
     ],
@@ -122,5 +151,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685435938
+    "modified": 1685482145
 }

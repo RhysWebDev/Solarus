@@ -28,9 +28,20 @@
     }
   }
 
+  &__title-internal {
+    font-size: 50px;
+    line-height: 75px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
   &__content {
     font-size: 17px;
     line-height: 30px;
+
+    p {
+      padding-bottom: 1.5rem;
+    }
   }
 
   &__subtitle {

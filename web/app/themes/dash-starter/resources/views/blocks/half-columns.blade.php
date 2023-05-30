@@ -24,9 +24,11 @@
                 <img src="{{ get_field('image') }}" alt="" class="w-full">
             </div>
             <div class="half-column__text-container p-6 md:p-[8rem] md:py-[4rem] w-full md:w-1/2 mt-6 md:mt-0">
-                <h2 class="half-column__title mb-4 @if (get_field('flip_columns') === false) text-black @else text-white @endif">
+                <h2
+                    class="@if (is_front_page()) half-column__title @endif half-column__title-internal mb-4 @if (get_field('flip_columns') === false && get_field('background_color') === false) ) text-black @else text-white @endif">
                     {!! get_field('title') !!}</h2>
-                <div class="half-column__content @if (get_field('flip_columns') === false) text-black @else text-white @endif">
+                <div
+                    class="half-column__content @if (get_field('flip_columns') === false && get_field('background_color') === false) ) text-black @else text-white @endif">
                     {!! get_field('content') !!}</div>
 
                 <div class="half-column__repeater-boxes-wrap">
