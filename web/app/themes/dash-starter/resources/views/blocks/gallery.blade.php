@@ -14,8 +14,8 @@
   EnqueueScript: scripts/script.js
   EnqueueAssets: path/to/asset
 --}}
-<section class="container mx-auto my-[3rem]">
-    <div id="photo-gallery" class="columns-5 gap-x-2">
+<section class="container mx-auto my-3rem">
+    <div id="photo-gallery" class="lg:grid lg:grid-cols-5 lg:gap-x-2">
         @php
             $gallery = get_field('gallery');
         @endphp
