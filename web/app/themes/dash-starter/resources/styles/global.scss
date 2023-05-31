@@ -490,12 +490,16 @@ form.fluent_form_2 .wpf_has_custom_css.ff-btn-submit {
 .header {
   height: 120px;
 
+  @media (max-width: 1024px) {
+    height: 100px;
+  }
+
   &__logo {
     max-height: 105px;
 
     @media (max-width: 1024px) {
-      max-height: 85px;
-      min-height: 70px;
+      max-height: 75px;
+      min-height: 60px;
     }
   }
 }
