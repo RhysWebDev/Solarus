@@ -77,7 +77,7 @@
                         class="max-w-[670px] form_wrap drop-shadow-lg w-full p-4 absolute top-[50%] right-0 w-full md:w-[calc(50% + 3rem)] h-full flex flex-col items-center justify-end z-10 pr-3">
                         <div class="bg-white px-[2rem] md:px-[5rem] py-[3rem]">
                             <h3 class="font-custom-size color_secondary mb-4"> {{ get_field('form_title') }} </h3>
-                            <p> {{ get_field('form_content') }} </p>
+                            <div class="mb-4"> {{ get_field('form_content') }} </div>
                             {!! do_shortcode(get_field('form_shortcode')) !!}
                         </div>
                     </div>
