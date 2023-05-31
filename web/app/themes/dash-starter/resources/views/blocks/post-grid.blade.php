@@ -33,7 +33,7 @@
     <div class="flex flex-col items-center mb-8 md:flex-row md:justify-between">
         <h2 class="post-grid-block__title text-black text-[40px] font-bold">News</h2>
         @if (is_front_page())
-            <a href="#" class="btn btn--primary">Read all news</a>
+            <a href="https://solarus.dashdev.uk/news/" class="btn btn--primary">Read all news</a>
         @endif
     </div>
 
