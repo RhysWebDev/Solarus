@@ -437,9 +437,9 @@ p {
     height: 50px;
   }
 
-  label {
-    display: none !important;
-  }
+  // label {
+  //   display: none !important;
+  // }
 
   .ff-el-form-check-label {
     display: block !important;
@@ -483,6 +483,10 @@ form.fluent_form_2 .wpf_has_custom_css.ff-btn-submit {
   .ff-el-input--content {
     margin-bottom: 20px;
   }
+}
+
+.fluentform .ff-el-form-control {
+  padding: 20px !important;
 }
 
 // header css

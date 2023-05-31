@@ -61,7 +61,8 @@
                     </div>
                     <div class="half-column__buttonwrap mt-4">
                         @if (get_field('button'))
-                            <a href="{{ get_field('button')['url'] }}"
+                            <a data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+                                href="{{ get_field('button')['url'] }}"
                                 class="half-column__button btn--primary btn rounded">{{ get_field('button')['title'] }}</a>
                         @endif
                     </div>

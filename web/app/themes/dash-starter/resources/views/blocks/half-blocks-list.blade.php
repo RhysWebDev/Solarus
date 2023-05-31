@@ -33,7 +33,8 @@
                     <div class="text-base text-black pb-2 md:pb-5 mb-6 md:mb-6">
                         {!! get_field('service_content') !!}
                     </div>
-                    <a href="{{ $serviceButtonLink['url'] }}" class="mt-4 md:mt-5 btn btn--primary">
+                    <a data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+                        href="{{ $serviceButtonLink['url'] }}" class="mt-4 md:mt-5 btn btn--primary">
                         {{ $serviceButtonLink['title'] }}
                     </a>
                 </div>

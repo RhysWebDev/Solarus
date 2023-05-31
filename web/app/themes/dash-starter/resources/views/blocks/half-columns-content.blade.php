@@ -35,7 +35,8 @@
                     {!! get_field('column_2_content') !!}
                     <div class="mt-[4rem]">
                         @if (get_field('button_link'))
-                            <a href="{{ get_field('button_link')['url'] }}"
+                            <a data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+                                href="{{ get_field('button_link')['url'] }}"
                                 class=" btn--primary btn">{{ get_field('button_link')['title'] }}</a>
                         @endif
                     </div>

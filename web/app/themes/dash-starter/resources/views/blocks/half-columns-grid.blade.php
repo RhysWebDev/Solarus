@@ -24,7 +24,8 @@
                     <h2 class="mb-4 text-black bg-white text-[25px] leading-[32px] font-bold">
                         {{ get_field('column_1_title') }}</h2>
                     @php $button = get_field('button'); @endphp
-                    <a href="{{ $button['url'] }}" class="btn btn--primary  mt-[5rem]">{{ $button['title'] }}</a>
+                    <a data-modal-target="defaultModal" data-modal-toggle="defaultModal" href="{{ $button['url'] }}"
+                        class="btn btn--primary  mt-[5rem]">{{ $button['title'] }}</a>
                 </div>
             </div>
             <div class="w-full md:w-1/2 px-4 lg:pl-[5rem]">
