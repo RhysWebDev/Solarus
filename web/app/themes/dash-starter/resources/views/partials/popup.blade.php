@@ -2,7 +2,7 @@
 <div id="defaultModal" tabindex="-1" aria-hidden="true"
     class="fixed top-0 left-0 right-0 z-50 hidden flex items-center justify-center w-full h-full">
     <div class="absolute top-0 left-0 right-0 bottom-0 bg-transparent-color"></div>
-    <div class="relative bg-white rounded-lg shadow max-w-[1357px]">
+    <div class="relative bg-white rounded-lg shadow max-w-[1357px] overflow-scroll h-full md:h-auto ">
         <button type="button"
             class="float-right text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
             data-modal-hide="defaultModal">
