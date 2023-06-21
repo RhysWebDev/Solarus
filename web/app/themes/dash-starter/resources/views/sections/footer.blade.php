@@ -33,8 +33,8 @@
                     class="footer__under-logo text-white flex flex-row flex-start pt-[2rem] md:pt-[5rem] pb-[2rem] md:pb-[5rem] gap-x-[3rem]">
                     <div class="footer__contact-info">
                         <p><a href="#">Contact Us </a></p>
-                        <p>0161 393 1882 </p>
-                        <p>hello@solarus.com</p>
+                        <p>{{ get_field('contact_number', 'option') }}</p>
+                        <p>{{ get_field('email', 'option') }}</p>
                     </div>
 
                     <div class="social-icons text-center justify-center flex gap-1">
