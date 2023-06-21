@@ -20,7 +20,7 @@
             <div class="hidden md:flex justify-between gap-4">
                 @php $button_link = get_field('login_button', 'option') @endphp
                 @if ($button_link)
-                    <a href="{{ esc_url($button_link['url']) }}" class="btn btn--primary"
+                    <a href="{{ esc_url($button_link['url']) }}" class="btn btn--primary font-bold"
                         data-modal-target="defaultModal"
                         data-modal-toggle="defaultModal">{{ esc_html($button_link['title']) }}</a>
                 @endif

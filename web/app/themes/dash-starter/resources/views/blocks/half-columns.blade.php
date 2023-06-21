@@ -33,7 +33,7 @@
 
                 <div class="half-column__repeater-boxes-wrap">
                     @if (have_rows('repeater_boxes'))
-                        <div class="mt-6 mb-2 grid grid-cols-1 md:grid-cols-3 ">
+                        <div class="mt-4 mb-2 grid grid-cols-1 md:grid-cols-3 ">
                             @while (have_rows('repeater_boxes'))
                                 @php the_row(); @endphp
 
