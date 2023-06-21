@@ -39,7 +39,7 @@
                         </div>
                         <div class="p-[4rem] md:p-[4rem]">
                             <div class="text-left">
-                                <h3 class="text-xl md:text-[30px] mb-2 md:mb-5 text-black leading-[40px]">
+                                <h3 class="text-xl md:text-[30px] mb-2 md:mb-5 text-black leading-[40px] font-bold">
                                     {{ $service_title }}</h3>
                             </div>
                             <div class="text-base text-black pb-2 md:pb-5 mb-[3rem] md:mb-[3rem]">
