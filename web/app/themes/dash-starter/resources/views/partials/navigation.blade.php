@@ -21,7 +21,7 @@
                                 <div
                                     class="nav-link im-base {{ $child->classes }} @if ($item->children) has-submenu parent @endif {{ $child->active ? 'current-item' : '' }}">
                                     <a href="{{ $child->url }}">
-                                        {{ $child->label }}
+                                        {!! $child->label !!}
                                     </a>
                                     @if ($child->children)
                                         <div
