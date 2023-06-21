@@ -10,7 +10,7 @@
         @foreach ($navigation->toArray() as $item)
             <div
                 class="nav-link px-4 text-white relative {{ $item->classes }} @if ($item->children) parent @endif {{ $item->active ? 'current-item' : '' }} ">
-                <a href="{{ $item->url }}">
+                <a @if ($item->children) href="javascript:void(0)" @else href="{{ $item->url }} @endif">
                     {{ $item->label }}
                 </a>
                 @if ($item->children)
