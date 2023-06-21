@@ -45,11 +45,11 @@
                             <div class="text-base text-black pb-2 md:pb-5 mb-[3rem] md:mb-[3rem]">
                                 {!! $service_content !!}
                             </div>
-                            <a data-modal-target="defaultModal" data-modal-toggle="defaultModal"
-                                href="{{ $service_button_link['url'] }}"
-                                class="mt-5 md:mt-5 btn btn--primary">{{ $service_button_text }}</a>
-
-
+                            @if ($service_button_link)
+                                <a data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+                                    href="{{ $service_button_link['url'] }}"
+                                    class="mt-5 md:mt-5 btn btn--primary">{{ $service_button_text }}</a>
+                            @endif
                         </div>
                     </div>
                 @endwhile
