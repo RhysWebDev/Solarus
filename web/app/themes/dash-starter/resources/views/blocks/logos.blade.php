@@ -32,7 +32,7 @@
                     @foreach ($logos as $index => $logo)
                         <div class="swiper-slide ">
                             <img src="{{ $logo['logo']['url'] }}" alt="{{ $logo['logo']['alt'] }}"
-                                class="w-full h-auto max-h-[38px] object-contain">
+                                class="w-full h-auto @if (is_page(555)) max-h-100px @else max-h-[38px] @endif object-contain">
                         </div>
                     @endforeach
                 @endif
