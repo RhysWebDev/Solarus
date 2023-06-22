@@ -67,7 +67,7 @@
                     <div
                         class="nav-link px-4 text-white relative {{ $item->classes }} @if ($item->children) parent @endif {{ $item->active ? 'current-item' : '' }} ">
                         <a href="{{ $item->url }}">
-                            {{ $item->label }}
+                            {!! $item->label !!}
                         </a>
                         @if ($item->children)
                             <div
