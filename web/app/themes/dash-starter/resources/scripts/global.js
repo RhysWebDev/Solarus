@@ -66,17 +66,6 @@ document.querySelectorAll('.faq__input').forEach((input) => {
 
 // Masonry
 
-// Initialize Masonry when the images are loaded
-imagesLoaded('#photo-gallery', function () {
-  // Initialize Masonry
-  var masonry = new Masonry('#photo-gallery', {
-    itemSelector: '.masonry-gallery__item',
-    columnWidth: '.masonry-gallery__item',
-    gutter: '.lg\\:gap-x-2', // Use double backslash to escape special characters in the class name
-    percentPosition: true,
-  });
-});
-
 // Menu
 
 // JavaScript to toggle the mobile menu
