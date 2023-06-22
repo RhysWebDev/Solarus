@@ -23,7 +23,7 @@
         @if ($gallery)
             @foreach ($gallery as $image)
                 <div class="masonry-gallery__item">
-                    <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" class="w-full">
+                    <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" class="w-full h-full object-cover">
                 </div>
             @endforeach
         @endif
