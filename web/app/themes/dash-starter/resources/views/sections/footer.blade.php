@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div
-                    class="footer__info row flex flex-row text-white pb-[2rem] justify-between text-[14px] leading-[16px]">
+                    class="footer__info row flex flex-col md:flex-row text-white pb-[2rem] justify-between text-[14px] leading-[16px]">
                     {!! get_field('footer_info', 'option') !!}
                 </div>
 
