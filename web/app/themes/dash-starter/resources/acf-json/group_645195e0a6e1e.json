@@ -253,6 +253,26 @@
                     "parent_repeater": "field_646ff04fb368a"
                 }
             ]
+        },
+        {
+            "key": "field_64a7ed0be287f",
+            "label": "Footer Info",
+            "name": "footer_info",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -273,5 +293,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685057636
+    "modified": 1688726855
 }

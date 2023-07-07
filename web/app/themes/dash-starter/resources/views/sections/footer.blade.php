@@ -3,7 +3,7 @@
     <section class="container mx-auto flex flex-col md:flex-row items-start mb-4">
         <div class="footer-col-start w-full md:w-2/3">
             @if (have_rows('footer_badges', 'option'))
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 md:pr-[3rem]">
                     @while (have_rows('footer_badges', 'option'))
                         @php the_row(); @endphp
                         <div class="flex items-center justify-center">
@@ -12,8 +12,9 @@
                     @endwhile
                 </div>
             @endif
-            <div class="footer__lower-content pt-[4rem] pt-[5rem] pr-[17rem]">
-                <div class="logo h-[69px] invert-colors content-center align-center text-center mx-auto mb-[5rem]">
+            <div class="footer__lower-content pt-[4rem] pt-[2rem] pr-[17rem]">
+                <div
+                    class="logo h-[69px] md:h-auto invert-colors content-center align-center text-center mx-auto mb-[5rem] pt-[3rem] md:pt-[4rem]">
                     @php $logo = get_field('footer_logo', 'option') @endphp
                     @if ($logo)
                         <a href="{{ esc_url(home_url()) }}"><img src="{{ esc_url($logo['url']) }}"
@@ -30,7 +31,7 @@
                 <hr />
 
                 <div
-                    class="footer__under-logo text-white flex flex-row flex-start pt-[2rem] md:pt-[5rem] pb-[2rem] md:pb-[5rem] gap-x-[3rem]">
+                    class="footer__under-logo text-white flex flex-row flex-start pt-[2rem] md:pt-[5rem] pb-[2rem] md:pb-[3rem] gap-x-[3rem]">
                     <div class="footer__contact-info">
                         <p><a href="#">Contact Us </a></p>
                         <p>{{ get_field('contact_number', 'option') }}</p>
@@ -56,6 +57,10 @@
                                     class="fab fa-instagram text-primary"></i></a>
                         @endif
                     </div>
+                </div>
+                <div
+                    class="footer__info row flex flex-row text-white pb-[2rem] justify-between text-[14px] leading-[16px]">
+                    {!! get_field('footer_info', 'option') !!}
                 </div>
 
                 <hr />
